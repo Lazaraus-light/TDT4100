@@ -1,3 +1,4 @@
+package Øving1;
 public class Digit {
     private int base;  // Tallsystemet
     private int value; // Sifferverdien
