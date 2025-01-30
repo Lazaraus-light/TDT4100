@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "tdt4100-forelesninger-25",
+			"path": "../forelesninger java/tdt4100-forelesninger-25"
+		},
+		{
+			"name": "tdt4100-ovinger-25",
+			"path": "../øvinger/tdt4100-ovinger-25"
+		}
+	],
+	"settings": {
+		"java.debug.settings.onBuildFailureProceed": true,
+		"jdk.runConfig.vmOptions": "--enable-preview --source 23"
+	}
+}
