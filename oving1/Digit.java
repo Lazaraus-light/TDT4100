@@ -1,4 +1,4 @@
-package oving1;
+package Øving1;
 public class Digit {
 
     private int base;

@@ -1,7 +1,6 @@
 package Øving1;
-
-
 public class account {
+
     private double balance;
     private double interestRate;
 
@@ -61,7 +60,7 @@ public class account {
         System.out.println("After adding interest: " + account);
 
         
-        account.deposit(-500);
+        account.deposit(-500); //fungerer ikke av en eller annen grunn, må få studass til å gå over.
         System.out.println("After attempting to deposit -500: " + account);
     }
 }
