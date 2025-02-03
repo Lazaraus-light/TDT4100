@@ -1,4 +1,4 @@
-package Øving2;
+package oving2;
 
 
 public class account {
