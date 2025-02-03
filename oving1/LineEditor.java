@@ -1,4 +1,4 @@
-package Øving1;
+package oving1;
 public class LineEditor {
 
     private String text;
