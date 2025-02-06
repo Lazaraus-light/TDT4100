@@ -1,8 +1,9 @@
+//ignorer denne, mye prøving og feiling som ikke endte med noe nyttig.
+/*
 package oving2;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
@@ -11,10 +12,30 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class person {
-    private String fornavn;
+    private static final Set<String> validCodes = loadValidCodes();
+
+    private static Set<String> loadValidCodes() {
+        Set<String> codes = new HashSet<>();
+        try (Scanner reader = new Scanner(new FileInputStream("oving2/landskoder.txt"))) {
+            while (reader.hasNextLine()) {
+                String code = reader.nextLine().trim();
+                if (!code.isEmpty()) {
+                    if (!code.startsWith(".")) {
+                        code = "." + code;
+                        }
+                    }
+                    codes.add(code);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException("Country codes file not found: landskoder.txt", e);
+        }
+        return codes;
+    }
     private String mellomnavn;
     private String etternavn;
     private String email;
+    private LocalDate bday;
     private LocalDate bday;
 
     public person(String fornavn, String mellomnavn, String etternavn, String email, String bday) {
@@ -26,38 +47,11 @@ public class person {
     }
 
     public void setEmail(String email) {
-        
         if (email == null || !email.contains("@")) {
             throw new IllegalArgumentException("Email must contain '@'.");
         }
         
         
-        Set<String> validCodes = new HashSet<>();
-        try (Scanner reader = new Scanner(new FileInputStream("landskoder.txt"))) {
-            while (reader.hasNextLine()) {
-                String code = reader.nextLine().trim();
-                if (!code.isEmpty()) {
-                    
-                    if (!code.startsWith(".")) {
-                        code = "." + code;
-                    }
-                    validCodes.add(code);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException("Country codes file not found: landskoder.txt", e);
-        }
-        
-        boolean validDomain = false;
-        while (reader.hasNextLine()){
-            string countryCode = reader.nextLine().trim();
-            if (email.endsWith("."+ countryCode)){
-                validDomain = true ;
-                break;
-            }
-        }
-        if (!validDomain){}
-
         boolean validSuffix = false;
         for (String code : validCodes) {
             if (email.endsWith(code)) {
@@ -88,11 +82,10 @@ public class person {
     }
 
     public String getFullName() {
-        
         return String.format("%s %s %s", fornavn, (mellomnavn.isEmpty() ? "" : mellomnavn), etternavn).trim();
     }
 
-    public String getEmail() {
+        return String.format("%s %s %s", fornavn, (mellomnavn == null || mellomnavn.isEmpty() ? "" : mellomnavn), etternavn).trim();
         return email;
     }
 
@@ -102,7 +95,6 @@ public class person {
 
     public static void main(String[] args) {
         try {
-            
             person p = new person("Åge", "Alexander", "Mortensen", "age.a.mortensen@kaermorhen.pl", "12-05-1990");
             System.out.println("Full Name: " + p.getFullName());
             System.out.println("Email: " + p.getEmail());
@@ -112,3 +104,4 @@ public class person {
         }
     }
 }
+    */
