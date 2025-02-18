@@ -1,0 +1,35 @@
+  ┌───────────────────────┐
+  │        [Start]        │
+  └──────────┬────────────┘
+                │ (Konstruktør kalles)
+                ▼
+   ┌─────────────────────────┐
+   │ Nyopprettet                     │
+   │ balance = 0                     │
+   │ interestRate = 0    			  │
+   └──────────┬──────────────┘
+     deposit(amount>0)
+             ▼
+   ┌─────────────────────────┐
+   │ Saldo > 0         			     │
+   │ balance > 0          			  │
+   │ interestRate = 0   			    │
+   └──────────┬──────────────┘
+       setInterestRate(r>0)
+             ▼
+   ┌─────────────────────────┐
+   │ Endret rente           │
+   │ balance >= 0           │
+   │ interestRate > 0       │
+   └──────────┬──────────────┘
+        addInterest()
+             │ 
+     (balance = balance +
+      balance*(interestRate/100))
+             │
+       deposit(amount>0)
+             │
+       deposit(amount<=0)
+       (ingen effekt)
+             └─► (Tilbake til samme tilstand
+                  fordi kun balanse/rente endres)

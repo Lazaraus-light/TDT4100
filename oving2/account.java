@@ -1,6 +1,7 @@
 package oving2;
 
 public class account {
+    
     private double balance;
     private double interestRate;
 
