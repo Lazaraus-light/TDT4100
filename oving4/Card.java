@@ -3,8 +3,8 @@ package oving4;
 
 
 public class Card {
-    private final char suit;
-    private final int face;
+    public final char suit;
+    public final int face;
 
     public Card(char suit, int face) {
         if (suit != 'S' && suit != 'H' && suit != 'D' && suit != 'C') {

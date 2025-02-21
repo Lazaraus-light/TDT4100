@@ -5,7 +5,7 @@ import java.util.List;
 
 
 public class CardDeck {
-    private final List<Card> cards;
+    public final List<Card> cards;
 
 
     public CardDeck(int n) {
@@ -53,5 +53,11 @@ public class CardDeck {
     @Override
     public String toString() {
         return cards.toString();
+    }
+
+
+    public void deal(CardHand hand, int i) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'deal'");
     }
 }

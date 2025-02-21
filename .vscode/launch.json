@@ -1,0 +1,147 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Card",
+            "request": "launch",
+            "mainClass": "oving3.Card",
+            "projectName": "div java vscode_438bbb1"
+        },
+        {
+            "type": "java",
+            "name": "RandomSeedTest",
+            "request": "launch",
+            "mainClass": "oving3.debugging.RandomSeedTest",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CoffeeCupProgram",
+            "request": "launch",
+            "mainClass": "oving3.debugging.CoffeeCupProgram",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Bil",
+            "request": "launch",
+            "mainClass": "Bil",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "OOPperson",
+            "request": "launch",
+            "mainClass": "OOPperson",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "fo",
+            "request": "launch",
+            "mainClass": "forelesninger.fo",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Digit",
+            "request": "launch",
+            "mainClass": "oving1.Digit",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "LineEditor",
+            "request": "launch",
+            "mainClass": "oving1.LineEditor",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "account",
+            "request": "launch",
+            "mainClass": "oving1.account",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "LineEditor(1)",
+            "request": "launch",
+            "mainClass": "oving2.LineEditor",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "account(1)",
+            "request": "launch",
+            "mainClass": "oving2.account",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "person",
+            "request": "launch",
+            "mainClass": "oving2.person",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "persontest",
+            "request": "launch",
+            "mainClass": "oving2.persontest",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "vehicle",
+            "request": "launch",
+            "mainClass": "oving2.vehicle",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Card",
+            "request": "launch",
+            "mainClass": "oving3.Card",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "card2",
+            "request": "launch",
+            "mainClass": "oving3.card2",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "Card(1)",
+            "request": "launch",
+            "mainClass": "oving4.Card",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "account(2)",
+            "request": "launch",
+            "mainClass": "Øving2.account",
+            "projectName": "div java vscode_5ab99e53"
+        }
+    ]
+}
