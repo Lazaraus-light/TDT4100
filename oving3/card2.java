@@ -6,6 +6,9 @@ package oving3;
  */
 public class card2 {
 
+    public final char suit;
+    public final int face;
+
     /**
      * The constructor of the {@code card2} class initializes the suit and face of the card2 with the
      * first and second arguments, respectively.
@@ -18,8 +21,20 @@ public class card2 {
      * 
      * @see {@link card2Test#testConstructor}
      */
+
+
     public card2(char suit, int face) {
         // TODO: implement this constructor
+        
+        if (suit != 'S' && suit != 'H' && suit != 'D' && suit != 'C') {
+            throw new IllegalArgumentException("Invalid suit: " + suit);
+        }
+        if (face < 1 || face > 13) {
+            throw new IllegalArgumentException("Invalid face value: " + face);
+        }
+        this.suit = suit;
+        this.face = face;
+
     }
 
     /**
@@ -27,7 +42,8 @@ public class card2 {
      */
     public char getSuit() {
         // TODO: implement this method
-        return '\0';
+        return this.suit;
+        //return '\0';
     }
 
     /**
@@ -35,7 +51,8 @@ public class card2 {
      */
     public int getFace() {
         // TODO: implement this method
-        return 0;
+        return this.face;
+        //return 0;
     }
 
     /**
@@ -47,7 +64,8 @@ public class card2 {
     @Override
     public String toString() {
         // TODO: implement this method
-        return null;
+        return "" + suit + face;
+        //return null;
     }
 
     public static void main(String[] args) {

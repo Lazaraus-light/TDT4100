@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Twitter",
+            "request": "launch",
+            "mainClass": "oving5.Twitter",
+            "projectName": "div java vscode_438bbb1"
+        },
+        {
+            "type": "java",
+            "name": "Twitter",
+            "request": "launch",
+            "mainClass": "oving4.Twitter",
+            "projectName": "div java vscode_5ab99e53"
+        },
+        {
+            "type": "java",
+            "name": "card2",
+            "request": "launch",
+            "mainClass": "oving3.card2",
+            "projectName": "div java vscode_438bbb1"
+        },
+        {
+            "type": "java",
+            "name": "Card",
+            "request": "launch",
+            "mainClass": "oving4.Card",
+            "projectName": "div java vscode_438bbb1"
+        },
+        {
+            "type": "java",
             "name": "Card",
             "request": "launch",
             "mainClass": "oving3.Card",

@@ -66,5 +66,6 @@ public class CardHand {
         System.out.println("\nSpilte kortet: " + playedCard);
         System.out.println("Hånd etter å ha spilt et kort: " + hand);
         System.out.println("Antall kort igjen i hånden: " + hand.getCardCount());
+                return playedCard;
     }
 }
