@@ -1,4 +1,4 @@
-package oving5;
+package oving5.Named;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
