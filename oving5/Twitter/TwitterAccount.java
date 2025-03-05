@@ -1,6 +1,8 @@
-package oving5;
+package oving5.Twitter;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,6 +22,10 @@ public class TwitterAccount {
 
     public String getUserName() {
         return userName;
+    }
+
+    public int getFollowerCount() {
+        return followers.size();
     }
 
     public void follow(TwitterAccount account) {
@@ -76,5 +82,12 @@ public class TwitterAccount {
         }
         return count;
     }
- 
+
+    public List<TwitterAccount> getFollowers(Comparator<TwitterAccount> comparator) {
+        List<TwitterAccount> sortedFollowers = new ArrayList<>(followers);
+        if (comparator != null) {
+            Collections.sort(sortedFollowers, comparator);
+        }
+        return sortedFollowers;
+    }
 }

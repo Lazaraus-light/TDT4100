@@ -1,4 +1,4 @@
-package oving5;
+package oving5.Twitter;
 
 public class Tweet {
     private TwitterAccount owner;

@@ -1,4 +1,6 @@
-package oving5;
+package oving5.Twitter;
+
+import oving5.Twitter.Twitter.TwitterAccount;
 
 public class Twitter {
     public static void main(String[] args) {
