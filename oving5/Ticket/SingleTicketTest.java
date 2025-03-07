@@ -1,4 +1,4 @@
-package oving5;
+package oving5.Ticket;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;

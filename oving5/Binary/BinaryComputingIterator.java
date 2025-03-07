@@ -1,4 +1,4 @@
-package oving5.Binary
+package oving5.Binary;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

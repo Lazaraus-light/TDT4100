@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Card",
+            "request": "launch",
+            "mainClass": "oving5.Card.Card",
+            "projectName": "div java vscode_438bbb1"
+        },
+        {
+            "type": "java",
             "name": "Twitter",
             "request": "launch",
             "mainClass": "oving5.Twitter",
